@@ -1,0 +1,42 @@
+const apiurl="https://api.bluelytics.com.ar/v2/latest"
+
+async function obtenervalor(){
+    try{
+        const response = await fetch(apiurl)
+        const data = await response.json()
+
+        document.getElementById("lon").innerHTML = data.blue.value_buy        
+
+        // console.log('Data de la api:', data.oficial.value_buy)
+
+        // document.getElementById("lat").innerHTML = data.oficial.value_buy
+        // document.getElementById("lon").innerHTML = data.blue.value_buy
+        // let fecha1=data.last_update
+        // console.log('esto es get', fecha1)
+        // let ano=fecha1.substring(0,4)
+        // console.log('Año:  ',ano)
+        // let mes=fecha1.substring(5,7)
+        // console.log('mes:  ',mes)
+        // let dia=fecha1.substring(8,10)
+        // console.log('dia:  ',dia)
+
+        // let fecha2= ': ';
+        // fecha2=fecha2.concat(dia);
+        // fecha2=fecha2.concat("/");
+        // fecha2=fecha2.concat(mes);
+        // fecha2=fecha2.concat("/");
+        // fecha2=fecha2.concat(ano);
+        // console.log(fecha2)
+        // let hora=data.last_update
+
+        
+        
+
+        // document.getElementById("fecha").innerHTML = fecha2
+
+        // document.getElementById("hora").innerHTML = hora.substring(11,19)
+    }
+    catch(error) {console.log('ocurrio un error grave', error)}
+}
+
+obtenervalor()
