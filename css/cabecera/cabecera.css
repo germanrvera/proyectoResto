@@ -43,49 +43,30 @@
 
 .menu__lista{
     display: flex;
+    text-align: center; 
+    flex-wrap: wrap;
+}
+
+.cabecera__menu{
+    text-align: center;
 }
     
 
-@media screen and (min-width: 0){
 
-    .cabecera {
 
-        padding: 0 1rem;
-        justify-content: center;
-    }
 
-  
-}
-
-@media screen and (min-width: 768px){
-
-    .cabecera {
-
-        padding: 0 5rem;
-        justify-content: space-between;
-    }
-
-  
-}
     
 @media screen and (min-width: 1024px) {
 
     .cabecera {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
-        border: none;
-    }
-}
-
-@media screen and (min-width: 820px) {
-    
-    .cabecera {
-        flex-direction: row;
-        justify-content: space-around;
-        border: none;
         
     }
 }
+
+
 
 @media screen and (min-width: 360px) {
     
@@ -93,6 +74,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+       
         
     }
 }
